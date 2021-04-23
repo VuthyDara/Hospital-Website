@@ -28,7 +28,6 @@
           <p>Health Tips</p>
           <hr>
           <a href="#" class="func">Health Tips</a>
-          <a href="#" class="func">Health Tips Video</a>
           <a href="#" class="func">Disease & Treatment</a>
         </div>
       </div>
@@ -63,7 +62,7 @@ export default {
   display: flex;
   justify-content: space-between;
   margin-top: 0px;
-  padding: 0px 100px;
+  padding: 0px;
 }
 
 .field {
@@ -117,6 +116,7 @@ li {
 .dropdown-content {
   display: none;
   position: absolute;
+  background-color: white;
   right: 0;
   min-width: 360px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
