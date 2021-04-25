@@ -1,36 +1,32 @@
 <template>
-    <div class="search">
-        <div class="left">
-            <div class="row">
-                <div class="box">
-                    <a href="#">
-                        <div class="in">
-                            <img src="../assets/icon.png" width="48" height="48">
-                            <label>Find a Doctor</label>
-                        </div>
-                    </a>             
-                </div>
-                <div class="box">
-                    <div>
-                        <a href="#">
-                            <img src="../assets/icon.png" width="48" height="48">
-                            <label>Make an appointment</label>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row2">
-                <form action="#">
-                    <div>
-                        <input type="text" name="search" placeholder="Search for doctor">
-                    </div>
-                </form>
-            </div>
+  <div class="search">
+    <div class="left">
+      <div class="row">
+        <div class="box">
+          <a href="#">
+            <img src="../assets/icon.png" width="48" height="48">
+            <label>Find a Doctor</label>
+          </a>             
         </div>
-        <div class="right">
-            <img src="../assets/img.png">
+        <div class="box">
+          <a href="#">
+            <img src="../assets/icon.png" width="48" height="48">
+            <label>Make an appointment</label>
+          </a>             
         </div>
+      </div>  
+      <div>
+        <form action="#">
+          <div>
+            <input type="text" name="search" placeholder="Search for doctor">
+          </div>
+        </form>
+      </div>
     </div>
+    <div class="right">
+      <img class="img" src="../assets/search.jpg">
+    </div>
+  </div>
 </template>
 
 <script>
@@ -41,35 +37,48 @@ export default {
 
 <style scoped>
 .search {
-    margin: 0px 100px;
-    height: 350px;
-    display: flex;
-}
-
-.box {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.in {
-    width: 80px;
-    height: 101px;
-    display: block;
-}
-
-.row {
-    display: flex;
+  display: flex;
+  height: 300px;
+  width: 80%;
+  margin: auto;
 }
 
 .left {
-    display: block;
-    padding: 50px;
+  display: block;
+  width: 30%;
+  margin: auto;
+}
+
+.box {
+  width: 80px;
+  height: 101px;
+  display: block;
+}
+
+a {
+  color: black;
+}
+
+label {
+  font-size: 12px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+input {
+  width: 80%;
+  border-radius: 5px;
 }
 
 .right {
-    width: 60%;
-    margin-right: 0px;
+  padding: 10px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
 }
 </style>

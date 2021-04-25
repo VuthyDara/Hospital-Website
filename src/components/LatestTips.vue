@@ -1,38 +1,38 @@
 <template>
   <div class="tips">
-      <div class="title">
-          Latest Health Tips
-          <a href="#">
-              Health Tips>>
-          </a>
-      </div>
-      <hr>
-      <div class="row">
-          <div class="box">
-              <a href="#">
-                <img src="../assets/hospital.jpg" width="200">
-                <label>title</label>
-              </a>
-          </div>
-          <div class="box">
-              <a href="#">
-                <img src="../assets/hospital.jpg" width="200">
-                <label>title</label>
-              </a>
-          </div>
-          <div class="box">
-              <a href="#">
-                <img src="../assets/hospital.jpg" width="200">
-                <label>title</label>
-              </a>
-          </div>
-          <div class="box">
-              <a href="#">
-                <img src="../assets/hospital.jpg" width="200">
-                <label>title</label>
-              </a>
-          </div>
-      </div>
+    <div class="title">
+      Latest Health Tips
+      <a href="#">
+        Health Tips>>
+      </a>
+    </div>
+    <hr>
+    <div class="row">
+      <a href="#">
+        <div class="box">
+          <img src="../assets/news.jpg" width="200">
+          <label>title</label>
+        </div>
+      </a>
+      <a href="#">
+        <div class="box">
+          <img src="../assets/news.jpg" width="200">
+          <label>title</label>
+        </div>
+      </a>
+      <a href="#">
+        <div class="box">
+          <img src="../assets/news.jpg" width="200">
+          <label>title</label>
+        </div>
+      </a>
+      <a href="#">
+        <div class="box">
+          <img src="../assets/news.jpg" width="200">
+          <label>title</label>
+        </div>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -42,21 +42,35 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .tips {
-    width: 80%;
-    margin: auto;
-    display: block;
-    height: 220px;
+  margin: auto;
+  display: block;
+  height: 220px;
+  margin-top: 15px;
 }
 
 .title {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  margin-top: 0px;
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 20%;
+  display: block;
+}
+
+label {
+  font-size: 12px;
+  margin: auto;
 }
 </style>

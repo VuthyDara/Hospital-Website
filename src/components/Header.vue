@@ -1,7 +1,7 @@
 <template>
-  <div class="navbar">
+  <div class="header">
     <div class="title">
-      {{ title }}
+      Hospital
     </div>
     <ul>
       <div class="dropdown">
@@ -47,21 +47,16 @@
 
 <script>
 export default {
-  name: 'Header',
-  data() {
-    return {
-      title: 'Hospital'
-    }
-  }
+  name: 'Header'
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.navbar {
+.header {
   display: flex;
   justify-content: space-between;
-  margin-top: 0px;
+  margin: 0px 10px;
   padding: 0px;
 }
 
@@ -90,7 +85,8 @@ ul {
 }
 
 hr {
-  height: 0px;
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 
 li {
@@ -117,7 +113,7 @@ li {
   display: none;
   position: absolute;
   background-color: white;
-  right: 0;
+  left: 0;
   min-width: 360px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 6px;

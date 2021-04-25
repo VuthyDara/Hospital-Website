@@ -11,15 +11,15 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <img src="../assets/hospital.jpg" style="width:100%; height:300px">
+          <img src="../assets/feature1.jpg" style="width:100%; height:300px">
         </div>
 
         <div class="item">
-          <img src="../assets/hospital1.jpg" style="width:100%; height:300px">
+          <img src="../assets/feature2.jpg" style="width:100%; height:300px">
         </div>
       
         <div class="item">
-          <img src="../assets/hospital2.jpg" style="width:100%; height:300px">
+          <img src="../assets/feature3.jpg" style="width:100%; height:300px">
         </div>
       </div>
 
@@ -45,4 +45,20 @@ export default {
 
 <style scoped>
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css";
+
+.container {
+  width: 100%;
+}
+
+.glyphicon-chevron-left {
+  left: 50px;
+}
+
+.glyphicon-chevron-right {
+  right: 50px;
+}
+
+.carousel-indicators {
+  bottom: 0px;
+}
 </style>

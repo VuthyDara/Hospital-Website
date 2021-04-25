@@ -44,8 +44,8 @@ export default {
   justify-content: space-between;
 }
 
-.map {
-  width: 30%;
+hr {
+  margin-top: 0px;
 }
 
 .func {
