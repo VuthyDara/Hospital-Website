@@ -5,7 +5,7 @@
         <div class="box">
           <a href="#">
             <img src="../assets/icon.png" width="48" height="48">
-            <label>Find a Doctor</label>
+            <label>Find a <br> Doctor</label>
           </a>             
         </div>
         <div class="box">
@@ -51,7 +51,8 @@ export default {
 
 .box {
   width: 80px;
-  height: 101px;
+  height: 100px;
+  margin-right: 1em;
   display: block;
 }
 
@@ -70,6 +71,7 @@ label {
 
 input {
   width: 80%;
+  margin-left: -1.2em;
   border-radius: 5px;
 }
 
@@ -78,7 +80,7 @@ input {
 }
 
 .img {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  
 }
 </style>

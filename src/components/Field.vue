@@ -61,11 +61,11 @@ export default {
 <style scoped>
 .field {
   padding: 0px 15px;
-  margin: auto;
+  /*margin: auto;*/
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 2em;
 }
 
 a {
