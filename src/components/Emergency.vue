@@ -1,12 +1,12 @@
 <template>
   <div class="emergency">
     <div class="left">
-      <h4>Emergency Call(24/7)</h4>
+      <h3>Emergency Call(24/7)</h3>
       <h5>+855 12 345 678</h5>
       <h5>+855 12 345 678</h5>
     </div>
     <div class="right">
-      <h4>Need a doctor for checkup?</h4>
+      <h3>Need a doctor for checkup?</h3>
       <a href="#">
         <span>Make an appointment</span>
       </a>
@@ -22,9 +22,10 @@ export default {
 
 <style scoped>
 .emergency {
-  background-color: #dc3545;
-  height: 120px;
-  margin: auto;
+  margin-top: 3em;
+  background-color: #bd1122;
+  height: 140px;
+  /*margin: auto;*/
   color: white;
   display: flex;
   margin-bottom: 10px;
@@ -32,16 +33,19 @@ export default {
 
 .left {
   width: 30%;
+  margin-left: 2em;
   padding: 10px;
 }
 
 .right {
   width: 70%;
-  margin-right: 0px;
+  text-align: right;
+  margin-right: 4em;
   padding: 10px;
 }
 
 a {
   color: white;
+  font-size: 1.2em;
 }
 </style>

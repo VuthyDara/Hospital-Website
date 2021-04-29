@@ -44,10 +44,10 @@ export default {
 
 <style scoped>
 .tips {
-  margin: auto;
+  /*margin: auto;*/
   display: block;
   height: 220px;
-  margin-top: 15px;
+  margin-top: 3em;
 }
 
 .title {

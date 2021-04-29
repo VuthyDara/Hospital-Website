@@ -3,7 +3,7 @@
     <div class="title">
       Latest News
       <a href="#">
-        News & Medias>>
+        News & Media>>
       </a>
     </div>
     <hr>
