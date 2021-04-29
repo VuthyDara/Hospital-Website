@@ -66,6 +66,7 @@ label {
 
 .row {
   display: flex;
+  justify-content: space-between;
 }
 
 input {

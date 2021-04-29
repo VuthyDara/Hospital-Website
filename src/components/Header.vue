@@ -37,7 +37,7 @@
           <p>Contact Us</p>
           <hr>
           <a href="#" class="func">Contact Us</a>
-          <a href="#" class="func">Customer Feedback</a>
+          <a href="./Feedback.vue" class="func">Customer Feedback</a>
         </div>
       </div>
     </ul>
