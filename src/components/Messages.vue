@@ -85,14 +85,12 @@ export default {
   width: 100%;
   height: 300px;
 }
-
 .search {
   display: flex;
   height: 300px;
   width: 80%;
   margin: auto;
 }
-
 .box {
   width: 100%;
   height: 100px;
@@ -100,21 +98,16 @@ export default {
   margin-right: 1em;
   display: block;
 }
-
 a {
   color: black;
 }
-
-
 .row {
   display: flex;
   justify-content: space-around;
 }
-
 input {
   width: 80%;
   margin-left: -1.2em;
   border-radius: 5px;
 }
-
 </style>
