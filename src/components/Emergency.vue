@@ -34,6 +34,7 @@ export default {
 .left {
   width: 30%;
   margin-left: 2em;
+  font-size: 1.2em;
   padding: 10px;
 }
 
