@@ -3,6 +3,7 @@
     <div>
       <p>Center & Clinic</p>
       <hr>
+      <router-link to="/doctor">Our Doctor</router-link>
       <a href="#" class="func">Make an Appointment</a>
       <a href="#" class="func">Patient's Story</a>
     </div>
@@ -15,7 +16,7 @@
     <div>
       <p>Contact Us</p>
       <hr>
-      <a href="#" class="func">Contact Us</a>
+      <router-link to="message">Contact Us</router-link>
       <a href="./Feedback.vue" class="func">Customer Feedback</a>
     </div>
     <div>
@@ -52,5 +53,10 @@ hr {
   display: block;
   color: black;
   text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 </style>

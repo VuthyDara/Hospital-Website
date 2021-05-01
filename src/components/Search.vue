@@ -3,10 +3,10 @@
     <div class="left">
       <div class="row">
         <div class="box">
-          <a href="#">
+          <routerlink to="/doctor">
             <img src="../assets/icon.png" width="48" height="48">
             <label>Find a <br> Doctor</label>
-          </a>             
+          </routerlink>             
         </div>
         <div class="box">
           <a href="#">
@@ -57,6 +57,7 @@ export default {
 }
 
 a {
+  text-decoration: none;
   color: black;
 }
 
