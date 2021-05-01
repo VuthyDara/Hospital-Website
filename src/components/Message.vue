@@ -1,5 +1,4 @@
 <template>
-  <Header></Header>
   <div class="message">
     <div class="box">
       <span>You can use this form to book appointment with our doctor.
@@ -71,21 +70,12 @@ Before booking any appointment make sure you have checked the doctor's schedule.
         <button type="submit">Submit Request</button>
     </div>
   </div>
-  <LatestNews></LatestNews> 
-  <Footer></Footer>
 </template>
 
 <script>
-import Header from '../components/Header.vue'
-import LatestNews from '../components/LatestNews.vue'
-import Footer from '../components/Footer.vue'
-
 export default {
   name: 'Message',
   components: {
-    Header,
-    LatestNews,
-    Footer
   }
 }
 </script>
@@ -126,6 +116,5 @@ input {
   margin-left: -1.2em;
   border-radius: 5px;
 }
-
 
 </style>
