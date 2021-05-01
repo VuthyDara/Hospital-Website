@@ -67,6 +67,7 @@ Before booking any appointment make sure you have checked the doctor's schedule.
             </form>
           </div>
         </div>
+        <button type="submit">Submit Request</button>
     </div>
   </div>  
 </template>
