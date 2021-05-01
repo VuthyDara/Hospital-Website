@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="title">
-      Hospital
+      <router-link to="/">Hospital</router-link>
     </div>
     <ul>
       <div class="dropdown">
@@ -18,6 +18,7 @@
           <a href="#" class="field">Brain</a>
           <a href="#" class="field">Neurology</a>
           <a href="#" class="field">ICU</a>
+          <router-link to="/doctor">Our Doctor</router-link>
           <a href="#" class="func">Make an Appointment</a>
           <a href="#" class="func">Patient's Story</a>
         </div>
@@ -36,8 +37,8 @@
         <div class="dropdown-content">
           <p>Contact Us</p>
           <hr>
-          <a href="#" class="func">Contact Us</a>
-          <a href="./Feedback.vue" class="func">Customer Feedback</a>
+          <router-link to="/message">Contact Us</router-link>
+          <a href="#" class="func">Customer Feedback</a>
         </div>
       </div>
     </ul>
@@ -68,8 +69,14 @@ export default {
   color: black;
 }
 
-.title {
+.title a {
   font-size: 40px;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 .nav {

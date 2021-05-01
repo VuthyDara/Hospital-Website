@@ -10,14 +10,14 @@
 </template>
 
 <script>
-import Header from './Header.vue'
-import Feature from './Feature.vue'
-import Field from './Field.vue'
-import Search from './Search.vue'
-import Emergency from './Emergency.vue'
-import LatestTips from './LatestTips.vue'
-import LatestNews from './LatestNews.vue'
-import Footer from './Footer.vue'
+import Header from '../components/Header.vue'
+import Feature from '../components/Feature.vue'
+import Field from '../components/Field.vue'
+import Search from '../components/Search.vue'
+import Emergency from '../components/Emergency.vue'
+import LatestTips from '../components/LatestTips.vue'
+import LatestNews from '../components/LatestNews.vue'
+import Footer from '../components/Footer.vue'
 
 export default {
   name: 'Home',
