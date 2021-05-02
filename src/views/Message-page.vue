@@ -1,7 +1,7 @@
 <template>
   <Header></Header>
-  <Emergency></Emergency>
-  <Message></Message>
+  <Emergency class="emergency"></Emergency>
+  <Message class="message"></Message>
   <LatestNews></LatestNews> 
   <Footer></Footer>
 </template>
@@ -24,3 +24,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.emergency {
+  height: 250px;
+  display: block;
+  margin-bottom: -20px;
+}
+</style>

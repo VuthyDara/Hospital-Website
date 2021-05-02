@@ -108,6 +108,7 @@ h4 {
   margin: auto;
   display: block;
   border: 1px solid #e6e4e4;
+  background-color: white;
 }
 
 a {
@@ -139,6 +140,7 @@ a {
 
 .custom-input>* {
   vertical-align: middle;
+  width: 90%;
 }
 
 .custom-input img {
@@ -164,7 +166,6 @@ a {
 }
 
 select {
-  width: 80%;
   font-size: 0.8em;
   margin-left: -1.2em;
 }
@@ -172,7 +173,6 @@ select {
 input {
   width: 80%;
   font-size: 0.8em;
-  
 }
 
 
