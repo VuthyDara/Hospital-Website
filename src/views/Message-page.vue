@@ -31,4 +31,8 @@ export default {
   display: block;
   margin-bottom: -20px;
 }
+
+.message {
+  margin-bottom: 50px;
+}
 </style>
