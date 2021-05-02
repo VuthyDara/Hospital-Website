@@ -44,7 +44,12 @@ Before booking any appointment make sure you have checked the doctor's schedule.
             <form action="#">
               <div class="custom-input">
                 <img src="../assets/department.png">
-                <input type="text" name="department" placeholder="Choose a department">
+                <select name="department">
+                  <option value="default" selected="selected">Choose a department</option>
+                  <option value="eyes">Eyes</option>
+                  <option value="stomach">Stomach</option>
+                  <option value="general">General Diseses</option>
+                </select>
               </div>
             </form>
           </div>
@@ -52,7 +57,12 @@ Before booking any appointment make sure you have checked the doctor's schedule.
             <form action="#">
               <div class="custom-input">
                 <img src="../assets/doctor.png">
-                <input type="text" name="doctor" placeholder="Choose a doctor">
+                <select name="department">
+                  <option value="default" selected="selected">Choose a doctor</option>
+                  <option value="doctor">Mr. A</option>
+                  <option value="doctor">Mrs. B</option>
+                  <option value="doctor">Mr. C</option>
+                </select>
               </div>
             </form>
           </div>
@@ -86,6 +96,7 @@ export default {
 }
 .button {
   margin: 1.5em 0em 1.5em 30em;
+  border: 1px solid #999797 ;
   border-radius: 2em;
 }
 h4 {
@@ -144,10 +155,24 @@ a {
   margin-left: 0.5em;
 }
 
-input {
+.custom-input select {
+  border: none;
+  height: 18px;
+  display: inline-block;
+  outline: none;
+  margin-left: 0.5em;
+}
+
+select {
   width: 80%;
   font-size: 0.8em;
   margin-left: -1.2em;
+}
+
+input {
+  width: 80%;
+  font-size: 0.8em;
+  
 }
 
 
