@@ -83,7 +83,6 @@ export default {
 <style scoped>
 .message {
   width: 100%;
-  height: 300px;
 }
 
 .search {
@@ -95,7 +94,6 @@ export default {
 
 .box {
   width: 100%;
-  height: 100px;
   margin: auto;
   margin-right: 1em;
   display: block;
