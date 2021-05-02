@@ -61,7 +61,7 @@ Before booking any appointment make sure you have checked the doctor's schedule.
           <div>
             <form action="#">
               <div class="custom-input" id="message-input">
-                <img src="../assets/text.png">
+                <img src="../assets/text.png" class="img">
                 <input type="text" name="text" placeholder="Message">
               </div>
             </form>
@@ -108,6 +108,7 @@ a {
   justify-content: center;
   margin-top: 10px;
 }
+
 #message-input {
   width: 39em;
   height: 7em;
@@ -122,6 +123,7 @@ a {
   padding: 5px;
   width: 18em;
   border-radius: 5px;
+  text-align: start;
 }
 
 .custom-input>* {
