@@ -1,12 +1,12 @@
 <template>
   <div class="message">
     <div class="box">
-      <span>You can use this form to book appointment with our doctor.
-Before booking any appointment make sure you have checked the doctor's schedule.</span>
+      <h4>You can use this form to book appointment with our doctor.<br/>
+Before booking any appointment make sure you have checked the doctor's schedule.</h4>
       <div class="row">
         <div>
           <form action="#">
-            <div>
+            <div class="custom-input">
               <img src="../assets/patient.png">
               <input type="text" name="patient_name" placeholder="Patient's Name">
             </div>
@@ -14,7 +14,7 @@ Before booking any appointment make sure you have checked the doctor's schedule.
         </div>
         <div>
             <form action="#">
-              <div>
+              <div class="custom-input">
                 <img src="../assets/phonenumber.png">
                 <input type="text" name="phone_number" placeholder="Phone Number">
               </div>
@@ -24,7 +24,7 @@ Before booking any appointment make sure you have checked the doctor's schedule.
         <div class="row">
           <div>
             <form action="#">
-              <div>
+              <div class="custom-input">
                 <img src="../assets/email.png">
                 <input type="text" name="email" placeholder="Email Address">
               </div>
@@ -32,9 +32,9 @@ Before booking any appointment make sure you have checked the doctor's schedule.
           </div>
           <div>
             <form action="#">
-              <div>
+              <div class="custom-input">
                 <img src="../assets/date.png">
-                <input type="text" name="date" placeholder="Choose Date">
+                <input type="date" name="date" placeholder="Choose Date">
               </div>
             </form>
           </div>
@@ -42,7 +42,7 @@ Before booking any appointment make sure you have checked the doctor's schedule.
         <div class="row">
           <div>
             <form action="#">
-              <div>
+              <div class="custom-input">
                 <img src="../assets/department.png">
                 <input type="text" name="department" placeholder="Choose a department">
               </div>
@@ -50,7 +50,7 @@ Before booking any appointment make sure you have checked the doctor's schedule.
           </div>
           <div>
             <form action="#">
-              <div>
+              <div class="custom-input">
                 <img src="../assets/doctor.png">
                 <input type="text" name="doctor" placeholder="Choose a doctor">
               </div>
@@ -60,21 +60,21 @@ Before booking any appointment make sure you have checked the doctor's schedule.
         <div class="row">
           <div>
             <form action="#">
-              <div>
+              <div class="custom-input" id="message-input">
                 <img src="../assets/text.png">
                 <input type="text" name="text" placeholder="Message">
               </div>
             </form>
           </div>
         </div>
-        <button type="submit">Submit Request</button>
+        <button class="button" type="submit">Submit Request</button>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Message',
+  name: 'Messages',
   components: {
   }
 }
@@ -84,28 +84,69 @@ export default {
 .message {
   width: 100%;
 }
-.search {
-  display: flex;
-  height: 300px;
-  width: 80%;
-  margin: auto;
+.button {
+  margin: 1.5em 0em 1.5em 30em;
+  border-radius: 2em;
+}
+h4 {
+  font-size: 1em;
+  padding:  1em 1.5em 1em 1.5em;
 }
 .box {
-  width: 100%;
+  width: 60%;
   margin: auto;
-  margin-right: 1em;
   display: block;
+  border: 1px solid #e6e4e4;
 }
+
 a {
   color: black;
 }
+
 .row {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-top: 10px;
 }
-input {
-  width: 80%;
-  margin-left: -1.2em;
+#message-input {
+  width: 39em;
+  height: 7em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.custom-input {
+  background-color: white;
+  border: 2px solid #ededed;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  padding: 5px;
+  width: 18em;
   border-radius: 5px;
 }
+
+.custom-input>* {
+  vertical-align: middle;
+}
+
+.custom-input img {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+
+.custom-input input {
+  border: none;
+  height: 18px;
+  display: inline-block;
+  outline: none;
+  margin-left: 0.5em;
+}
+
+input {
+  width: 80%;
+  font-size: 0.8em;
+  margin-left: -1.2em;
+}
+
+
 </style>
