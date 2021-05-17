@@ -139,6 +139,7 @@ a {
 
 .custom-input>* {
   vertical-align: middle;
+  width: 90%;
 }
 
 .custom-input img {
