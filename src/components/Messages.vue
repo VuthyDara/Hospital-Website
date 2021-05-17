@@ -166,13 +166,11 @@ a {
 select {
   width: 80%;
   font-size: 0.8em;
-  margin-left: -1.2em;
 }
 
 input {
   width: 80%;
   font-size: 0.8em;
-  
 }
 
 
