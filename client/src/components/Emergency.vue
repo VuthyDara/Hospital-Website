@@ -40,9 +40,6 @@ export default {
 
 .right {
   width: 70%;
-  text-align: right;
-  margin-right: 4em;
-  padding: 10px;
 }
 
 a {
