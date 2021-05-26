@@ -5,7 +5,7 @@
       <hr>
       <router-link to="/doctor">Our Doctor</router-link>
       <a href="#" class="func">Make an Appointment</a>
-      <a href="#" class="func">Patient's Story</a>
+      <router-link to="/patient-story">Patient's Story</router-link>
     </div>
     <div>
       <p>Health Tips</p>
