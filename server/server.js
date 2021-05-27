@@ -6,7 +6,7 @@ const cors = require('cors')
 
 const routes = require('./routes/app_routes')
 const app = express()
-const port = 3000
+const port = 4000
 
 try {
   app.use(cors())
@@ -17,7 +17,7 @@ try {
   console.log(err)
 }
 
-mongoose.connect('mongodb+srv://Dara:A12345678@cluster0.qyreg.mongodb.net/Hospital?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://Dara:A12345678@cluster0.pr9wu.mongodb.net/Hospital?retryWrites=true&w=majority')
 .then(result => {
   console.log("Db is connected")
   app.listen(port)

@@ -15,7 +15,7 @@
             </form>
       </div>
       <div class="list">
-
+        
       </div>
   </div>
   <LatestNews></LatestNews> 
@@ -28,7 +28,7 @@ import LatestNews from '../components/LatestNews.vue'
 import Footer from '../components/Footer.vue'
 
 export default {
-  name: 'Message',
+  name: 'Doctor',
   components: {
     Header,
     LatestNews,

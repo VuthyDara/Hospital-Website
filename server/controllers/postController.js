@@ -14,7 +14,8 @@ exports.getPosts = (req, res) => {
 exports.createPost = (req, res) => {
   // console.log(req.body)
   const post = new Post({
-    content: req.body.content,
+    name: req.body.name,
+    department: req.body.department,
     postedAt: new Date().toISOString()
   })
   post.save().then(result => {
