@@ -37,21 +37,21 @@ const routes = [
     name: 'patient1',
     component: patient1
   },
-  {
-    path: '/patient2',
-    name: 'patient2',
-    component: patient1
-  },
-  {
-    path: '/patient3',
-    name: 'patient3',
-    component: patient1
-  },
-  {
-    path: '/patient4',
-    name: 'patient4',
-    component: patient1
-  }
+  // {
+  //   path: '/patient2',
+  //   name: 'patient2',
+  //   component: patient1
+  // },
+  // {
+  //   path: '/patient3',
+  //   name: 'patient3',
+  //   component: patient1
+  // },
+  // {
+  //   path: '/patient4',
+  //   name: 'patient4',
+  //   component: patient1
+  // }
 ]
 
 const router = createRouter({

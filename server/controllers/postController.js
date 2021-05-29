@@ -15,8 +15,7 @@ exports.createPost = (req, res) => {
   // console.log(req.body)
   const post = new Post({
     name: req.body.name,
-    department: req.body.department,
-    postedAt: new Date().toISOString()
+    department: req.body.department
   })
   post.save().then(result => {
     console.log('post created')
