@@ -1,143 +1,80 @@
 <template>
-    <div>
-        <h1>Admin Dashboard</h1>
-        <div class="box">
-            <div class="left">
-                <p>Admin</p>
-                <hr>
-                <p>Doctor</p>
-            </div>
-            <div class="right">
-                <p>Dashboard</p>
-                <hr>
-                <section class="card">
-                    <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="posts-tab" data-toggle="tab" href="#posts" role="tab" aria-controls="posts" aria-selected="true">Add a doctor</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-body">
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
-                                <div class="form-group">
-                                    <label class="sr-only" for="message">post</label>
-                                    <textarea 
-                                        v-model="form.name" 
-                                        class="form-control" 
-                                        id="message" rows="1" 
-                                        @input="validateContent"
-                                        placeholder="Enter doctor's name...">
-                                    </textarea>
-                                    <textarea 
-                                        v-model="form.department" 
-                                        class="form-control" 
-                                        id="message" rows="1" 
-                                        @input="validateContent"
-                                        placeholder="Enter doctor's department...">
-                                    </textarea>
-                                    <span v-if="hasError" class="form-error-message">{{error.message}}</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-right">
-                            <button @click="submitPost" type="button" class="btn btn-primary">Add</button>
-                        </div>
-                    </div>
-                </section>
-                <section v-for="post in getPosts" :key="post.id" class="card mt-4">
-                    <div class="border p-2">
-          <!-- post header -->
-          <div class="row m-0">
-            <div class="">
-              <a class="text-decoration-none" href="#">
-                <img class="" src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png" width="50" height="50" alt="...">
-              </a>
-            </div>
-            <div class="flex-grow-1 pl-2">
-              <a class="text-decoration-none" href="#">
-                <h2 class="text-capitalize h5 mb-0">{{post.user}}</h2>
-              </a> 
-              <p class="small text-secondary m-0 mt-1">{{post.postedAt}}</p>
-            </div>
-            
-            <div class="dropdown">
-              <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-chevron-down"></i>
-              </a>
-
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item text-primary" href="#">Edit</a>
-                <a class="dropdown-item text-primary" href="#">Delete</a>
-              </div>
-            </div>
-          </div>
-          <!-- post body -->
-          <div class="">
-            <p class="my-2">
-              {{post.content}}
-            </p>
-          </div>
-          <hr class="my-1">
-          <!-- post footer begins -->
-          <footer class="">
-            <!-- post actions -->
-            
-            
-
-            <!-- collapsed comments begins -->
-            <div class="collapse" id="collapseExample">
-              <div class="card border border-right-0 border-left-0 border-bottom-0 mt-1">
-                <!-- new comment form -->
-                <section class="mt-3">
-                  <form action="">
-                    <div class="input-group input-group">
-                      <input type="text" class="form-control" placeholder="Write Comment" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                      <div class="input-group-append">
-                        <a class="text-decoration-none text-white btn btn-primary" href="#" role="button">Comment</a>
-                      </div>
-                    </div>
-                  </form>
-                </section>
-                <!-- comment card bgins -->
-                <section>
-                  <div class="card p-2 mt-3">
-                    <!-- comment header -->
-                    <div class="d-flex">
-                      <div class="">
-                        <a class="text-decoration-none" href="#">
-                          <img class="profile-pic" src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png" width="40" height="40" alt="...">
-                        </a>
-                      </div>
-                      
-                      <div >
-                        <div class="dropdown">
-                          <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-chevron-down"></i>
-                          </a>
-
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <!-- comment header -->
-                    <!-- comment body -->
-                    
-                  </div>
-                </section>
-                <!-- comment card ends -->
-
-              </div>
-            </div>
-            <!-- collapsed comments ends -->
-          </footer>
-          <!-- post footer ends -->
+  <div>
+    <h1>Admin Dashboard</h1>
+      <div class="box">
+        <div class="left">
+          <p>Admin</p>
+          <hr>
+          <p>Doctor</p>
         </div>
-      </section>
+        <div class="right">
+          <p>Dashboard</p>
+          <hr>
+          <section class="card">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="posts-tab" data-toggle="tab" href="#posts" role="tab" aria-controls="posts" aria-selected="true">Add a doctor</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
+                  <div class="form-group">
+                    <label class="sr-only" for="message">post</label>
+                      <textarea 
+                        v-model="form.name" 
+                        class="form-control" 
+                        id="message" rows="1" 
+                        @input="validateContent"
+                        placeholder="Enter doctor's name...">
+                      </textarea>
+                      <textarea 
+                        v-model="form.department" 
+                        class="form-control" 
+                        id="message" rows="1" 
+                        @input="validateContent"
+                        placeholder="Enter doctor's department...">
+                      </textarea>
+                      <span v-if="hasError" class="form-error-message">{{error.message}}</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <button @click="submitPost" type="button" class="btn btn-primary">Add</button>
+                </div>
+              </div>
+            </section>
+            <section v-for="post in getPosts" :key="post.id" class="card mt-4">
+              <div class="border p-2">
+                <div class="row m-0">
+                  <div class="">
+                    <a class="text-decoration-none" href="#">
+                      <img class="" src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png" width="50" height="50" alt="...">
+                    </a>
+                  </div>
+                  <div class="flex-grow-1 pl-2">
+                    <a class="text-decoration-none" href="#">
+                      <h2 class="text-capitalize h5 mb-0">{{post.name}}</h2>
+                    </a> 
+                      <p class="small text-secondary m-0 mt-1">{{post.department}}</p>
+                    </div>
+                    <div class="dropdown">
+                      <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-chevron-down"></i>
+                      </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item text-primary" href="#">Edit</a>
+                      <a class="dropdown-item text-primary" href="#">Delete</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
+        </div>
       </div>
-  </div>
 </template>
 
 <script>

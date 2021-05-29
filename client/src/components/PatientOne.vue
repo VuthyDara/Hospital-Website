@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'patient1',
+  name: 'PatientOne',
   components: {
   }
 }
