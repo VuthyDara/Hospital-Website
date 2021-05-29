@@ -1,6 +1,6 @@
 <template>
   <Header></Header>
-  <Patient class="patient"></Patient>
+  <Patient2></Patient2>
   <LatestNews class="latest"></LatestNews> 
   <Footer></Footer>
 </template>
@@ -10,25 +10,21 @@ import Header from '../components/Header.vue'
 import LatestNews from '../components/LatestNews.vue'
 import Footer from '../components/Footer.vue'
 import Emergency from '../components/Emergency.vue'
-import Patient from '../components/Patient.vue'
+import Patient2 from '../components/Patient2.vue'
 
 export default {
-  name: 'Patients-story',
+  name: 'Patient2',
   components: {
     Header,
     Emergency,
-    Patient,
+    Patient2,
     LatestNews,
     Footer,
-    Patient
   }
 }
 </script>
 
 <style scoped>
-.patient {
-  margin-top: 2em;
-}
 .latest {
   margin-top:4em;
 }

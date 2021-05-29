@@ -1,7 +1,7 @@
 <template>
     <div class="patients">
         <div class="box">
-            <h3>Patient's stories</h3>
+            <h3>Patient's stories</h3><hr>
             <div class="row">
                 <div class="story">
                 <img src="../assets/story1.jpg">
@@ -60,6 +60,9 @@ export default {
 }
 h3 {
     text-align: left;
+}
+hr {
+    margin-top: -0.5em;
 }
 .row {
     display: flex;
