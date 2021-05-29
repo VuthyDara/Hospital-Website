@@ -1,6 +1,6 @@
 <template>
   <Header></Header>
-  <PatientTwo></PatientTwo>
+  <PatientThree></PatientThree>
   <LatestNews class="latest"></LatestNews> 
   <Footer></Footer>
 </template>
@@ -10,14 +10,14 @@ import Header from '../components/Header.vue'
 import LatestNews from '../components/LatestNews.vue'
 import Footer from '../components/Footer.vue'
 import Emergency from '../components/Emergency.vue'
-import PatientTwo from '../components/PatientTwo.vue'
+import PatientThree from '../components/PatientThree.vue'
 
 export default {
-  name: 'Patient2',
+  name: 'Patient3',
   components: {
     Header,
     Emergency,
-    PatientTwo,
+    PatientThree,
     LatestNews,
     Footer,
   }

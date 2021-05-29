@@ -17,7 +17,7 @@
       <p>Contact Us</p>
       <hr>
       <router-link to="message">Contact Us</router-link>
-      <a href="./Feedback.vue" class="func">Customer Feedback</a>
+      <router-link to="/feedback" class="func">Customer Feedback</router-link>
     </div>
     <div>
       <p>Follow Us</p>

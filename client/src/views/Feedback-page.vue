@@ -1,7 +1,8 @@
 <template>
   <Header></Header>
-  <PatientTwo></PatientTwo>
-  <LatestNews class="latest"></LatestNews> 
+  <Emergency class="emergency"></Emergency>
+  <Feedback class="feedback"></Feedback>
+  <LatestNews></LatestNews> 
   <Footer></Footer>
 </template>
 
@@ -9,23 +10,29 @@
 import Header from '../components/Header.vue'
 import LatestNews from '../components/LatestNews.vue'
 import Footer from '../components/Footer.vue'
+import Feedback from '../components/Feedback.vue'
 import Emergency from '../components/Emergency.vue'
-import PatientTwo from '../components/PatientTwo.vue'
 
 export default {
-  name: 'Patient2',
+  name: 'FeedbackPage',
   components: {
     Header,
     Emergency,
-    PatientTwo,
+    Feedback,
     LatestNews,
-    Footer,
+    Footer
   }
 }
 </script>
 
 <style scoped>
-.latest {
-  margin-top:4em;
+.emergency {
+  height: 250px;
+  display: block;
+  margin-bottom: -20px;
+}
+
+.feedback {
+  margin-bottom: 50px;
 }
 </style>

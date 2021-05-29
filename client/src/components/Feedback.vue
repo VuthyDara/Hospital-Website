@@ -1,19 +1,163 @@
 <template>
-  <router-view/>
-  <LatestNews></LatestNews>
+  <div class="feedback">
+    <div class="box">
+      <h4>As we aim to give you the utmost level of service and attention, we would love to hear from you 
+        and to receive your comments and suggestions to help us better serve you. 
+        Please feel free to write your message in the box below.</h4>
+      <div class="row">
+          <div>
+            <form action="#">
+              <div class="custom-input" id="feedback-input">
+                <img src="../assets/text.png" class="img">
+                <input type="text" name="text" placeholder="Your Feedback or Suggestion.">
+              </div>
+            </form>
+          </div>
+        </div>
+      <div class="row">
+        <div>
+          <form action="#">
+            <div class="custom-input">
+              <img src="../assets/patient.png">
+              <input type="text" name="patient_name" placeholder="Full Name">
+            </div>
+          </form>
+        </div>
+         <div>
+            <form action="#">
+              <div class="custom-input">
+                <img id="national" src="../assets/national.png">
+                <input type="text" name="nationality" placeholder="Nationality">        
+              </div>
+            </form>
+          </div>
+      </div>
+      <div class="row">
+        <div>
+            <form action="#">
+              <div class="custom-input">
+                <img src="../assets/phonenumber.png">
+                <input type="text" name="phone_number" placeholder="Phone Number">
+              </div>
+            </form>
+          </div>   
+          <div>
+            <form action="#">
+              <div class="custom-input">
+                <img src="../assets/email.png">
+                <input type="text" name="email" placeholder="Email Address">
+              </div>
+            </form>
+          </div>
+         </div>
+         <div class="row">
+         <h5>We would like to thank you on behalf of Our Hospital <br>and our team for giving us the opportunity to serve you.</h5>
+        <button class="button" type="submit">Submit Request</button>
+         </div>
+     </div>
+  </div>
 </template>
 
 <script>
-import LatestNews from './LatestNews.vue'
-
 export default {
   name: 'Feedback',
   components: {
-    LatestNews
   }
 }
 </script>
 
-<style>
+<style scoped>
+.feedback {
+  width: 100%;
+}
+.button {
+  margin: 1.5em 0em 1.5em 30em;
+  border: 1px solid #999797 ;
+  border-radius: 2em;
+}
+h5 {
+  text-align: left;
+}
+
+h4 {
+  font-size: 1em;
+  padding:  1em 1.5em 1em 1.5em;
+}
+#national {
+  width: 20px;
+  height: 20px;
+}
+.box {
+  width: 70%;
+  margin: auto;
+  display: block;
+  border: 1px solid #e6e4e4;
+  background-color: white;
+}
+
+a {
+  color: black;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#feedback-input {
+  width: 43em;
+  height: 10em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.custom-input {
+  background-color: white;
+  border: 2px solid #ededed;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  padding: 5px;
+  width:20em;
+  border-radius: 5px;
+  text-align: start;
+}
+
+.custom-input>* {
+  vertical-align: middle;
+  width: 90%;
+}
+
+.custom-input img {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+
+.custom-input input {
+  border: none;
+  height: 18px;
+  display: inline-block;
+  outline: none;
+  margin-left: 0.5em;
+}
+
+.custom-input select {
+  border: none;
+  height: 18px;
+  display: inline-block;
+  outline: none;
+  margin-left: 0.5em;
+}
+
+select {
+  font-size: 0.8em;
+  margin-left: -1.2em;
+}
+
+input {
+  width: 80%;
+  font-size: 0.8em;
+}
+
 
 </style>
