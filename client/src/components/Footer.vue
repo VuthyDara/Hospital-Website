@@ -16,7 +16,7 @@
     <div>
       <p>Contact Us</p>
       <hr>
-      <router-link to="message">Contact Us</router-link>
+      <router-link to="/contact">Contact Us</router-link>
       <router-link to="/feedback" class="func">Customer Feedback</router-link>
     </div>
     <div>

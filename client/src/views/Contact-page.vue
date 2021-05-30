@@ -1,6 +1,6 @@
 <template>
   <Header></Header>
-  <Message class="message"></Message>
+  <Contact class="contact"></Contact>
   <LatestNews></LatestNews> 
   <Footer></Footer>
 </template>
@@ -9,13 +9,14 @@
 import Header from '../components/Header.vue'
 import LatestNews from '../components/LatestNews.vue'
 import Footer from '../components/Footer.vue'
-import Message from '../components/Messages.vue'
+import Contact from '../components/Contact.vue'
+
 
 export default {
-  name: 'Message-page',
+  name: 'ContactPage',
   components: {
     Header,
-    Message,
+    Contact,
     LatestNews,
     Footer
   }
@@ -29,7 +30,7 @@ export default {
   margin-bottom: -20px;
 }
 
-.message {
+.contact {
   margin-bottom: 50px;
 }
 </style>

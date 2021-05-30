@@ -7,9 +7,9 @@
     </div>
     <div class="right">
       <h3>Need a doctor for checkup?</h3>
-      <a href="#">
+      <router-link to="/message">
         <span>Make an appointment</span>
-      </a>
+      </router-link>
     </div>
   </div>
 </template>
