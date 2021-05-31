@@ -46,9 +46,9 @@ Before booking any appointment make sure you have checked the doctor's schedule.
                 <img src="../assets/department.png">
                 <select name="department">
                   <option value="default" selected="selected">Choose a department</option>
-                  <option value="eyes">Eyes</option>
-                  <option value="stomach">Stomach</option>
-                  <option value="general">General Diseses</option>
+                  <option value="department" v-for="post in getPosts" :key="post.id">
+                    <h2 class="text-capitalize h5 mb-0">{{post.department}}</h2>
+                  </option>
                 </select>
               </div>
             </form>
@@ -57,11 +57,11 @@ Before booking any appointment make sure you have checked the doctor's schedule.
             <form action="#">
               <div class="custom-input">
                 <img src="../assets/doctor.png">
-                <select name="department">
+                <select name="doctor">
                   <option value="default" selected="selected">Choose a doctor</option>
-                  <option value="doctor">Mr. A</option>
-                  <option value="doctor">Mrs. B</option>
-                  <option value="doctor">Mr. C</option>
+                  <option value="doctor" v-for="post in getPosts" :key="post.id">
+                    <h2 class="text-capitalize h5 mb-0">{{post.name}}</h2>
+                  </option>
                 </select>
               </div>
             </form>
@@ -83,10 +83,15 @@ Before booking any appointment make sure you have checked the doctor's schedule.
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+import axios from 'axios'
 export default {
   name: 'Messages',
-  components: {
-  }
+  computed: {
+        ...mapGetters([
+            "getPosts"
+        ]), // mapGetters() will return ["getPosts"] => "getPosts"
+    }
 }
 </script>
 
