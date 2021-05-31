@@ -179,7 +179,9 @@ a {
   justify-content: center;
   margin-top: 10px;
 }
-
+textarea {
+  display: inline;
+}
 #feedback-input {
   width: 43em;
   height: 10em;

@@ -19,7 +19,7 @@
           <a href="#" class="field">Neurology</a>
           <a href="#" class="field">ICU</a>
           <router-link to="/doctor">Our Doctor</router-link>
-          <a href="#" class="func">Make an Appointment</a>
+          <router-link to="/message">Make an Appointment</router-link>
           <a href="#" class="func">Patient's Story</a>
         </div>
       </div>
@@ -38,7 +38,7 @@
           <p>Contact Us</p>
           <hr>
           <router-link to="/message">Contact Us</router-link>
-          <a href="#" class="func">Customer Feedback</a>
+          <router-link to="/feedback">Customer Feedback</router-link>
         </div>
       </div>
     </ul>
