@@ -1,13 +1,22 @@
 <template>
   <div class="contact">
     <h3>Contact Us</h3><hr>
+      <div class="emergency">
+    <div class="left">
+      <h4 id="greet">THANK YOU FOR CONTACTING US!<br>
+      Get In Touch</h4><br>
+      <span>Tel: +855 12 345 678</span><br>
+      <span>&nbsp; +855 12 345 678</span>
+    </div>
+    
+  </div>
     <div class="box">
-      <h4>Thank you for contacting Our Hospital.<br>
+      <h4>Thank you for contacting Our Hospital.
 Please use this form for inquiries about our services or for sharing your feedback.</h4>
       <div class="row">
         <div>
           <form action="#">
-            <div class="custom-input">
+            <div class="custom-input" id="patient-name">
               <img src="../assets/patient.png">
               <input type="text" name="patient_name" placeholder="Full Name">
             </div>
@@ -42,7 +51,7 @@ Please use this form for inquiries about our services or for sharing your feedba
             </form>
           </div>
         </div>
-        <div class="row">
+        <div class="last">
          <h5>Thanks you for contacting with Our Hospital!<br>
 Our customer service will contact you back soon..</h5>
         <button class="button" type="submit">Submit Request</button>
@@ -64,9 +73,28 @@ export default {
   width: 100%;
 }
 .button {
-  margin: 1.5em 0em 1.5em 30em;
   border: 1px solid #999797 ;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 2em;
+  margin-top: 1em;
+}
+.left {
+  font-size: 1.5em;
+  text-align: left;
+}
+span {
+  font-size: 0.75em;
+  padding: 0em 0em 2em 3em;
+  margin-top: -5em;
+}
+#greet {
+  padding: 2em 2em 0em 2em;
+  margin-bottom: 0em;
+}
+#patient-name {
+  width: 43em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 h3 {
     text-align: left;
@@ -78,9 +106,15 @@ h5 {
 hr {
     margin-top: -0.5em;
 }
+
 h4 {
   font-size: 1em;
-  padding:  1em 1.5em 1em 1.5em;
+  padding: 1.5em 4em 1.5em 4em;
+}
+.last {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 4em 2em 4em;
 }
 #national {
   width: 20px;
@@ -145,6 +179,17 @@ input {
   width: 80%;
   font-size: 0.8em;
 }
+
+.emergency {
+  height: 18em;
+  margin-top: 3em;
+  background-color: #bd1122;
+  color: white;
+  margin-bottom: -1.5em;
+}
+
+
+
 
 
 </style>

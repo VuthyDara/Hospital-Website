@@ -9,13 +9,11 @@
             <form action="#">
               <div class="custom-input" id="feedback-input">
                 <img src="../assets/text.png" class="img">
-                <textarea 
+                <input
                   v-model="form.message" 
-                  class="form-control" 
-                  id="message" rows="4" 
+                  id="message" rows="3" 
                   @input="validateContent"
                   placeholder="Your Feedback or Suggestion.">
-                </textarea>
               </div>
             </form>
           </div>
@@ -25,13 +23,11 @@
           <form action="#">
             <div class="custom-input">
               <img src="../assets/patient.png">
-              <textarea 
+              <input 
                   v-model="form.name" 
-                  class="form-control" 
                   id="name" rows="1" 
                   @input="validateContent"
                   placeholder="Fullname">
-                </textarea>
             </div>
           </form>
         </div>
@@ -39,13 +35,11 @@
             <form action="#">
               <div class="custom-input">
                 <img id="national" src="../assets/national.png">
-                <textarea 
-                  v-model="form.nationality" 
-                  class="form-control" 
+                <input
+                  v-model="form.nationality"
                   id="nationality" rows="1" 
                   @input="validateContent"
-                  placeholder="Nationality">
-                </textarea>        
+                  placeholder="Nationality">     
               </div>
             </form>
           </div>
@@ -55,13 +49,11 @@
             <form action="#">
               <div class="custom-input">
                 <img src="../assets/phonenumber.png">
-                <textarea 
-                  v-model="form.tel" 
-                  class="form-control" 
+                <input
+                  v-model="form.tel"
                   id="tel" rows="1" 
                   @input="validateContent"
                   placeholder="Phone number">
-                </textarea>
               </div>
             </form>
           </div>   
@@ -69,18 +61,16 @@
             <form action="#">
               <div class="custom-input">
                 <img src="../assets/email.png">
-                <textarea 
-                  v-model="form.email" 
-                  class="form-control" 
+                <input
+                  v-model="form.email"
                   id="email" rows="1" 
                   @input="validateContent"
                   placeholder="Email">
-                </textarea>
               </div>
             </form>
           </div>
          </div>
-         <div class="row">
+         <div class="last">
           <h5>We would like to thank you on behalf of Our Hospital <br>and our team for giving us the opportunity to serve you.</h5>
           <button class="button" @click="submitFeedback" type="button">Submit Request</button>
          </div>
@@ -146,9 +136,10 @@ export default {
   width: 100%;
 }
 .button {
-  margin: 1.5em 0em 1.5em 30em;
   border: 1px solid #999797 ;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 2em;
+  margin-top: 1em;
 }
 h5 {
   text-align: left;
@@ -156,7 +147,7 @@ h5 {
 
 h4 {
   font-size: 1em;
-  padding:  1em 1.5em 1em 1.5em;
+  padding: 1.5em 4em 1.5em 4em;
 }
 #national {
   width: 20px;
@@ -179,9 +170,13 @@ a {
   justify-content: center;
   margin-top: 10px;
 }
-textarea {
-  display: inline;
+
+.last {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 4em 2em 4em;
 }
+
 #feedback-input {
   width: 43em;
   height: 10em;
@@ -226,15 +221,9 @@ textarea {
   margin-left: 0.5em;
 }
 
-select {
-  font-size: 0.8em;
-  margin-left: -1.2em;
-}
 
 input {
   width: 80%;
   font-size: 0.8em;
 }
-
-
 </style>

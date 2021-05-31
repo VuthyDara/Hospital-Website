@@ -20,7 +20,7 @@
           <a href="#" class="field">ICU</a>
           <router-link to="/doctor">Our Doctor</router-link>
           <router-link to="/message">Make an Appointment</router-link>
-          <a href="#" class="func">Patient's Story</a>
+          <router-link to="/patient-story">Patient's Story</router-link>
         </div>
       </div>
       <div class="dropdown">
@@ -37,7 +37,7 @@
         <div class="dropdown-content">
           <p>Contact Us</p>
           <hr>
-          <router-link to="/message">Contact Us</router-link>
+          <router-link to="/contact">Contact Us</router-link>
           <router-link to="/feedback">Customer Feedback</router-link>
         </div>
       </div>
