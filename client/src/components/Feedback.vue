@@ -9,7 +9,13 @@
             <form action="#">
               <div class="custom-input" id="feedback-input">
                 <img src="../assets/text.png" class="img">
-                <input type="text" name="text" placeholder="Your Feedback or Suggestion.">
+                <textarea 
+                  v-model="form.message" 
+                  class="form-control" 
+                  id="message" rows="4" 
+                  @input="validateContent"
+                  placeholder="Your Feedback or Suggestion.">
+                </textarea>
               </div>
             </form>
           </div>
@@ -19,7 +25,13 @@
           <form action="#">
             <div class="custom-input">
               <img src="../assets/patient.png">
-              <input type="text" name="patient_name" placeholder="Full Name">
+              <textarea 
+                  v-model="form.name" 
+                  class="form-control" 
+                  id="name" rows="1" 
+                  @input="validateContent"
+                  placeholder="Fullname">
+                </textarea>
             </div>
           </form>
         </div>
@@ -27,7 +39,13 @@
             <form action="#">
               <div class="custom-input">
                 <img id="national" src="../assets/national.png">
-                <input type="text" name="nationality" placeholder="Nationality">        
+                <textarea 
+                  v-model="form.nationality" 
+                  class="form-control" 
+                  id="nationality" rows="1" 
+                  @input="validateContent"
+                  placeholder="Nationality">
+                </textarea>        
               </div>
             </form>
           </div>
@@ -37,7 +55,13 @@
             <form action="#">
               <div class="custom-input">
                 <img src="../assets/phonenumber.png">
-                <input type="text" name="phone_number" placeholder="Phone Number">
+                <textarea 
+                  v-model="form.tel" 
+                  class="form-control" 
+                  id="tel" rows="1" 
+                  @input="validateContent"
+                  placeholder="Phone number">
+                </textarea>
               </div>
             </form>
           </div>   
@@ -45,23 +69,74 @@
             <form action="#">
               <div class="custom-input">
                 <img src="../assets/email.png">
-                <input type="text" name="email" placeholder="Email Address">
+                <textarea 
+                  v-model="form.email" 
+                  class="form-control" 
+                  id="email" rows="1" 
+                  @input="validateContent"
+                  placeholder="Email">
+                </textarea>
               </div>
             </form>
           </div>
          </div>
          <div class="row">
-         <h5>We would like to thank you on behalf of Our Hospital <br>and our team for giving us the opportunity to serve you.</h5>
-        <button class="button" type="submit">Submit Request</button>
+          <h5>We would like to thank you on behalf of Our Hospital <br>and our team for giving us the opportunity to serve you.</h5>
+          <button class="button" @click="submitFeedback" type="button">Submit Request</button>
          </div>
      </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+import axios from 'axios'
 export default {
   name: 'Feedback',
-  components: {
+  data() {
+    return {
+      form: {
+        message: '',
+        name: '',
+        tel: '',
+        email: '',
+        nationality: ''
+      },
+      error: {}
+    }
+  },
+  props: {
+    msg: String
+  },
+  methods: {
+    validateContent() {
+      if (this.form.message && this.form.name && this.form.tel && this.form.email && this.form.nationality != "") {
+        this.error.message = null
+      }
+    },
+    submitFeedback() {
+      // Validation content
+      if (this.form.message && this.form.name && this.form.tel && this.form.email && this.form.nationality == "") {
+        this.error.message = "Everything should be filled"
+      }
+      // Post content to server
+      axios.post('http://localhost:4000/feedbacks', this.form)
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    }
+  },
+  computed: {
+    hasError() {
+      if(this.error.message) return true
+      return false
+    },
+    ...mapGetters([
+      "getFeedbacks"
+    ]), // mapGetters() will return ["getPosts"] => "getPosts"
   }
 }
 </script>
