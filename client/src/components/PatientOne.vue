@@ -33,6 +33,9 @@ export default {
 .patient {
   width: 100%;
 }
+h2 {
+    text-align: center;
+}
 img {
     margin: 2em 0 2em 0;
 }
@@ -42,6 +45,7 @@ img {
   margin: auto;
   display: block;
   background-color: white;
+  text-align: left;
 }
 
 

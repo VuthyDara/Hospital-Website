@@ -6,7 +6,7 @@
       <h4 id="greet">THANK YOU FOR CONTACTING US!<br>
       Get In Touch</h4><br>
       <span>Tel: +855 12 345 678</span><br>
-      <span>&nbsp; +855 12 345 678</span>
+      <span>&emsp;&ensp; +855 12 345 678</span>
     </div>
     
   </div>
