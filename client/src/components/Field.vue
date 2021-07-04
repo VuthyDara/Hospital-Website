@@ -1,53 +1,53 @@
 <template>
   <div class="field">
-    <a href="#">
+    <router-link to="/generalcheckup">
       <div class="box">
-        <img src="../assets/icon.png">
+        <img src="../assets/general-checkup.png">
         <label>General Check Up</label>
       </div>
-    </a>
-    <a href="#">
+    </router-link>
+    <router-link to="/heart">
       <div class="box">
-        <img src="../assets/icon.png">
-        <label>General Check Up</label>
+        <img src="../assets/heart.jpg">
+        <label>Heart</label>
       </div>
-    </a>
-    <a href="#">
+    </router-link>
+    <router-link to="/children">
       <div class="box">
-        <img src="../assets/icon.png">
-        <label>General Check Up</label>
+        <img src="../assets/children.png">
+        <label>Children</label>
       </div>
-    </a>
-    <a href="#">
+    </router-link>
+    <router-link to="/woman">
       <div class="box">
-        <img src="../assets/icon.png">
-        <label>General Check Up</label>
+        <img src="../assets/woman.png">
+        <label>Woman</label>
       </div>
-    </a>
-    <a href="#">
+    </router-link>
+    <router-link to="/emergencypage">
       <div class="box">
-        <img src="../assets/icon.png">
-        <label>General Check Up</label>
+        <img src="../assets/emergency.png">
+        <label>Emergency</label>
       </div>
-    </a>
-    <a href="#">
+    </router-link>
+    <router-link to="/brain">
       <div class="box">
-        <img src="../assets/icon.png">
-        <label>General Check Up</label>
+        <img src="../assets/brain.jpg">
+        <label>Brain</label>
       </div>
-    </a>
-    <a href="#">
+    </router-link>
+    <router-link to="/stomach">
       <div class="box">
-        <img src="../assets/icon.png">
-        <label>General Check Up</label>
+        <img src="../assets/stomach.jpg">
+        <label>Stomach</label>
       </div>
-    </a>
-    <a href="#">
+    </router-link>
+    <router-link to="/ICU">
       <div class="box">
-        <img src="../assets/icon.png">
-        <label>General Check Up</label>
+        <img src="../assets/ICU.png">
+        <label>ICU</label>
       </div>
-    </a>
+    </router-link>
   </div>
 </template>
 
@@ -75,7 +75,7 @@ a {
 .box {
   width: 80px;
   height: 101px;
-  display: block;
+  display: grid;
 }
 
 img {

@@ -4,13 +4,13 @@
       <div class="row">
         <div class="box">
           <routerlink to="/doctor">
-            <img src="../assets/icon.png" width="48" height="48">
+            <img src="../assets/find.png" width="48" height="48">
             <label>Find a <br> Doctor</label>
           </routerlink>             
         </div>
         <div class="box">
           <a href="#">
-            <img src="../assets/icon.png" width="48" height="48">
+            <img src="../assets/appointment.jpg" width="48" height="48">
             <label>Make an appointment</label>
           </a>             
         </div>

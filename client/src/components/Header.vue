@@ -9,15 +9,14 @@
         <div class="dropdown-content">
           <p>Center & Clinic</p>
           <hr>
-          <a href="#" class="field">General Check up</a>
-          <a href="#" class="field">Heart</a>
-          <a href="#" class="field">GI Center</a>
-          <a href="#" class="field">Children</a>
-          <a href="#" class="field">Woman</a>
-          <a href="#" class="field">Emergency</a>
-          <a href="#" class="field">Brain</a>
-          <a href="#" class="field">Neurology</a>
-          <a href="#" class="field">ICU</a>
+          <router-link to="/generalcheckup" class="field">General Check up</router-link>
+          <router-link to="/heart" class="field">Heart</router-link>
+          <router-link to="/children" class="field">Children</router-link>
+          <router-link to="/woman" class="field">Woman</router-link>
+          <router-link to="/emergencypage" class="field">Emergency</router-link>
+          <router-link to="/brain" class="field">Brain</router-link>
+          <router-link to="/stomach" class="field">Stomach</router-link>
+          <router-link to="/ICU" class="field">ICU</router-link>
           <router-link to="/doctor">Our Doctor</router-link>
           <router-link to="/message">Make an Appointment</router-link>
           <router-link to="/patient-story">Patient's Story</router-link>
