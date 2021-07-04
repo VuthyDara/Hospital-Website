@@ -10,6 +10,7 @@ import patient3 from '../views/Patient-story3.vue'
 import patient4 from '../views/Patient-story4.vue'
 import feedback from '../views/Feedback-page.vue'
 import contact from '../views/Contact-page.vue'
+import thankyou from '../views/Thankyou-page.vue'
 
 const routes = [
   {
@@ -66,6 +67,11 @@ const routes = [
     path: '/contact',
     name: 'contactpage',
     component: contact
+  },
+  {
+    path: '/thankyou',
+    name: 'thankyoupage',
+    component: thankyou
   }
 ]
 
