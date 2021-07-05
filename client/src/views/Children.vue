@@ -1,6 +1,6 @@
 <template>
   <Header></Header>
-  <Children></Children>
+  <Childrens></Childrens>
   <LatestTips></LatestTips>
   <LatestNews></LatestNews>
   <Footer></Footer>
@@ -8,7 +8,7 @@
 
 <script>
 import Header from '../components/Header.vue'
-import Children from '../components/Children.vue'
+import Childrens from '../components/Children.vue'
 import LatestTips from '../components/LatestTips.vue'
 import LatestNews from '../components/LatestNews.vue'
 import Footer from '../components/Footer.vue'
@@ -17,7 +17,7 @@ export default {
   name: 'Children',
   components: {
     Header,
-    Children,
+    Childrens,
     LatestTips,
     LatestNews,
     Footer

@@ -36,7 +36,7 @@ export default {
 }
 
 .left {
-    width: 300%;
+    width: 100%;
 }
 
 img {
