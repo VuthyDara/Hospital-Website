@@ -72,7 +72,7 @@
          </div>
          <div class="last">
           <h5>We would like to thank you on behalf of Our Hospital <br>and our team for giving us the opportunity to serve you.</h5>
-          <button class="button" @click="submitFeedback"  type="button" >Submit Request</button>
+          <button class="button" @click="submitFeedback" type="button" >Submit Request</button>
          </div>
      </div>
   </div>

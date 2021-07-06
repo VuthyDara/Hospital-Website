@@ -120,6 +120,11 @@ const routes = [
     path: '/ICU',
     name: 'ICU',
     component: ICU
+  },
+  {
+    path: '/Alltips',
+    name: 'Alltips',
+    component: Alltip
   }
 ]
 
