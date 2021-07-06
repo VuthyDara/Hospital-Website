@@ -1,6 +1,6 @@
 <template>
   <Header></Header>
-  <ICU></ICU>
+  <ICUs></ICUs>
   <LatestTips></LatestTips>
   <LatestNews></LatestNews>
   <Footer></Footer>
@@ -8,7 +8,7 @@
 
 <script>
 import Header from '../components/Header.vue'
-import ICU from '../components/ICU.vue'
+import ICUs from '../components/ICU.vue'
 import LatestTips from '../components/LatestTips.vue'
 import LatestNews from '../components/LatestNews.vue'
 import Footer from '../components/Footer.vue'
@@ -17,7 +17,7 @@ export default {
   name: 'ICU',
   components: {
     Header,
-    ICU,
+    ICUs,
     LatestTips,
     LatestNews,
     Footer

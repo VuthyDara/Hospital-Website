@@ -2,18 +2,18 @@
   <div class="search">
     <div class="left">
       <div class="row">
-        <div class="box">
-          <routerlink to="/doctor">
+        <router-link to="/doctor">
+          <div class="box">
             <img src="../assets/find.png" width="48" height="48">
-            <label>Find a <br> Doctor</label>
-          </routerlink>             
-        </div>
-        <div class="box">
-          <a href="#">
+            <label>Find a <br> Doctor</label>      
+          </div>
+        </router-link> 
+        <router-link to="/message">
+          <div class="box">
             <img src="../assets/appointment.jpg" width="48" height="48">
-            <label>Make an appointment</label>
-          </a>             
-        </div>
+            <label>Make an appointment</label>           
+          </div>
+        </router-link>
       </div>  
       <div>
         <form action="#">

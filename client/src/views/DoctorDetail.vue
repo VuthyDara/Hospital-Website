@@ -1,30 +1,36 @@
 <template>
   <Header></Header>
-  <Brains></Brains>
-  <LatestTips></LatestTips>
-  <LatestNews></LatestNews>
+  <Doctordetail></Doctordetail>
+  <LatestNews></LatestNews> 
   <Footer></Footer>
 </template>
 
 <script>
 import Header from '../components/Header.vue'
-import Brains from '../components/Brain.vue'
-import LatestTips from '../components/LatestTips.vue'
+import Doctordetail from '../components/Doctor-detail.vue'
 import LatestNews from '../components/LatestNews.vue'
 import Footer from '../components/Footer.vue'
 
+
 export default {
-  name: 'Brain',
+  name: 'ContactPage',
   components: {
     Header,
-    Brains,
-    LatestTips,
+    Doctordetail,
     LatestNews,
     Footer
   }
 }
 </script>
 
-<style>
+<style scoped>
+.emergency {
+  height: 250px;
+  display: block;
+  margin-bottom: -20px;
+}
 
+.contact {
+  margin-bottom: 50px;
+}
 </style>

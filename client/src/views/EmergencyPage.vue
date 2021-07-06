@@ -1,6 +1,6 @@
 <template>
   <Header></Header>
-  <EmergencyPage></EmergencyPage>
+  <EmergencyPages></EmergencyPages>
   <LatestTips></LatestTips>
   <LatestNews></LatestNews>
   <Footer></Footer>
@@ -8,7 +8,7 @@
 
 <script>
 import Header from '../components/Header.vue'
-import EmergencyPage from '../components/EmergencyPage.vue'
+import EmergencyPages from '../components/EmergencyPage.vue'
 import LatestTips from '../components/LatestTips.vue'
 import LatestNews from '../components/LatestNews.vue'
 import Footer from '../components/Footer.vue'
@@ -17,7 +17,7 @@ export default {
   name: 'EmergencyPage',
   components: {
     Header,
-    EmergencyPage,
+    EmergencyPages,
     LatestTips,
     LatestNews,
     Footer
