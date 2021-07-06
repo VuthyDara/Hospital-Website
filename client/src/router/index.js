@@ -20,6 +20,7 @@ import brain from '../views/Brain.vue'
 import stomach from '../views/Stomach.vue'
 import ICU from '../views/ICU.vue'
 import doctordetail from '../views/DoctorDetail.vue'
+import alltips from '../views/Alltips-page.vue'
 
 const routes = [
   {
@@ -130,7 +131,7 @@ const routes = [
   {
     path: '/alltips',
     name: 'alltips',
-    component: alltip
+    component: alltips
   }
 ]
 

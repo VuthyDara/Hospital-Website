@@ -1,8 +1,10 @@
 <template>
+<div>
   <Header></Header>
   <AllTips class="tip"></AllTips>
   <LatestNews class="latest"></LatestNews> 
   <Footer></Footer>
+</div>
 </template>
 
 <script>
@@ -21,6 +23,7 @@ export default {
   }
 }
 </script>
+
 
 <style scoped>
 .tip {
