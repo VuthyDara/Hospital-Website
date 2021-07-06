@@ -46,32 +46,20 @@
                 </div>
               </div>
             </section>
-            <section v-for="post in getPosts" :key="post.id" class="card mt-4">
-              <div class="border p-2">
-                <div class="row m-0">
-                  <div class="">
-                    <a class="text-decoration-none" href="#">
-                      <img class="" src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png" width="50" height="50" alt="...">
-                    </a>
-                  </div>
-                  <div class="flex-grow-1 pl-2">
-                    <a class="text-decoration-none" href="#">
-                      <h2 class="text-capitalize h5 mb-0">{{post.name}}</h2>
-                    </a> 
-                      <p class="small text-secondary m-0 mt-1">{{post.department}}</p>
-                    </div>
-                    <div class="dropdown">
-                      <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-chevron-down"></i>
-                      </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item text-primary" href="#">Edit</a>
-                      <a class="dropdown-item text-primary" href="#">Delete</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+            <div class="container">
+              <ul>
+                <li v-for="post in getPosts" :key="post.id">
+                  <a href="#">
+                    <img src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png" width="50" height="50">
+                  </a>
+                  <a href="#">
+                    <h2 class="text-capitalize h5 mb-0">{{post.name}}</h2>
+                  </a> 
+                  <p class="small text-secondary m-0 mt-1">{{post.department}}</p>
+                </li>
+              </ul>
+              
+            </div>           
           </div>
         </div>
       </div>
@@ -152,4 +140,20 @@ hr {
 .form-error-message {
     color: red
   }
+
+  .container {
+  width: 940px;
+}
+
+.container ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.container ul li {
+  width: 300px;
+  height: 100px;
+  float: left;
+}
 </style>

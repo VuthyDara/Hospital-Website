@@ -16,15 +16,17 @@
     </div>
     <div class="container">
       <ul>
-        <li v-for="post in getPosts" :key="post.id">
-          <a href="#">
-            <img src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png" width="50" height="50">
-          </a>
-          <a href="#">
-            <h2 class="text-capitalize h5 mb-0">{{post.name}}</h2>
-          </a> 
-          <p class="small text-secondary m-0 mt-1">{{post.department}}</p>
-        </li>
+        <li v-for="post in getPosts" :key="post.name">
+        <router-link :to="{name: 'doctor-detail', params: {name: post.name}}">
+            <a href="#">
+              <img src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png" width="50" height="50">
+            </a>
+            <a href="#">
+              <h2 class="text-capitalize h5 mb-0">{{post.name}}</h2>
+            </a> 
+            <p class="small text-secondary m-0 mt-1">{{post.department}}</p>
+          
+        </router-link></li>
       </ul>
     </div>
   </div>

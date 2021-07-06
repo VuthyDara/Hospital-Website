@@ -18,6 +18,7 @@ import emergencypage from '../views/EmergencyPage.vue'
 import brain from '../views/Brain.vue'
 import stomach from '../views/Stomach.vue'
 import ICU from '../views/ICU.vue'
+import doctordetail from '../views/DoctorDetail.vue'
 
 const routes = [
   {
@@ -114,6 +115,11 @@ const routes = [
     path: '/ICU',
     name: 'ICU',
     component: ICU
+  },
+  {
+    path: '/doctor-detail',
+    name: 'doctor-detail',
+    component: doctordetail
   }
 ]
 
