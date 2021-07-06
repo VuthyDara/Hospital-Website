@@ -10,7 +10,7 @@
     <div>
       <p>Health Tips</p>
       <hr>
-      <a href="#" class="func">Health Tips</a>
+      <router-link to="/alltips">Health Tips</router-link>
       <a href="#" class="func">Disease & Treatment</a>
     </div>
     <div>

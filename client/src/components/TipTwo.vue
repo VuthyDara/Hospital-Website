@@ -1,7 +1,7 @@
 <template>
     <div class="tip">
         <div class="box">
-            <h2>Patient's stories</h2>
+            <h2>Tip 2</h2>
             <img src="../assets/tip2.jpg">
             <span>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quibusdam expedita magnam
@@ -45,7 +45,8 @@ export default {
 .tip {
   width: 100%;
 }
-h2 {
+
+h2{
     text-align: center;
 }
 img {
@@ -59,3 +60,5 @@ img {
   background-color: white;
   text-align: left;
 }
+
+</style>

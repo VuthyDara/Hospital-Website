@@ -21,6 +21,10 @@ import stomach from '../views/Stomach.vue'
 import ICU from '../views/ICU.vue'
 import doctordetail from '../views/DoctorDetail.vue'
 import alltips from '../views/Alltips-page.vue'
+import tip1 from '../views/Tip-1.vue'
+import tip2 from '../views/Tip2.vue'
+import tip3 from '../views/Tip3.vue'
+import tip4 from '../views/Tip4.vue'
 
 const routes = [
   {
@@ -132,7 +136,27 @@ const routes = [
     path: '/alltips',
     name: 'alltips',
     component: alltips
-  }
+  },
+  {
+    path: '/tip1',
+    name: 'tip1',
+    component: tip1
+  },
+  {
+    path: '/tip2',
+    name: 'tip2',
+    component: tip2
+  },
+  {
+    path: '/tip3',
+    name: 'tip3',
+    component: tip3
+  },
+  {
+    path: '/tip4',
+    name: 'tip4',
+    component: tip4
+  },
 ]
 
 const router = createRouter({

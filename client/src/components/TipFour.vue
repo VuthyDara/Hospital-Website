@@ -1,7 +1,7 @@
 <template>
     <div class="tip">
         <div class="box">
-            <h2>Patient's stories</h2>
+            <h2>Tip 4</h2>
             <img src="../assets/tip4.png">
             <span>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quibusdam expedita magnam
