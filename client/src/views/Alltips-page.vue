@@ -1,6 +1,6 @@
 <template>
   <Header></Header>
-  <AllTip class="tip"></AllTip>
+  <AllTips class="tip"></AllTips>
   <LatestNews class="latest"></LatestNews> 
   <Footer></Footer>
 </template>
@@ -9,10 +9,10 @@
 import Header from '../components/Header.vue'
 import LatestNews from '../components/LatestNews.vue'
 import Footer from '../components/Footer.vue'
-import Alltip from '../components/AllTip.vue'
+import AllTips from '../components/AllTips.vue'
 
 export default {
-  name: 'Alltips',
+  name: 'Alltips-page',
   components: {
     Header,
     AllTips,

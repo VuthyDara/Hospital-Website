@@ -126,6 +126,11 @@ const routes = [
     path: '/doctor-detail',
     name: 'doctor-detail',
     component: doctordetail
+  },
+  {
+    path: '/alltips',
+    name: 'alltips',
+    component: alltip
   }
 ]
 
