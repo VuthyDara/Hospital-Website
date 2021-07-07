@@ -8,25 +8,25 @@
     </div>
     <hr>
     <div class="row">
-      <a href="#">
+      <a href="http://localhost:8080/tip1">
         <div class="box">
           <img src="../assets/tip1.jpg" width="200">
           <label>Tip 1</label>
         </div>
       </a>
-      <a href="#">
+      <a href="http://localhost:8080/tip2">
         <div class="box">
           <img src="../assets/tip2.jpg" width="200">
           <label>Tip 2</label>
         </div>
       </a>
-      <a href="#">
+      <a href="http://localhost:8080/tip3">
         <div class="box">
           <img src="../assets/tip3.jpg" width="200">
           <label>Tip 3</label>
         </div>
       </a>
-      <a href="#">
+      <a href="http://localhost:8080/tip4">
         <div class="box">
           <img src="../assets/tip4.png" width="200">
           <label>Tip 4</label>

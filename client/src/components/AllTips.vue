@@ -40,18 +40,21 @@ export default {
 
 <style scoped>
 
+.alltips {
+  /*margin: auto;*/
+  display: block;
+  height: 220px;
+  margin-top: 3em;
+}
+
 h3 {
     text-align: left;
 }
 hr {
     margin-top: -0.5em;
 }
-
-.alltips {
-  /*margin: auto;*/
-  display: block;
-  height: 220px;
-  margin-top: 3em;
+img {
+  margin-left: -5em;
 }
 
 .title {
