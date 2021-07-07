@@ -57,7 +57,7 @@ h2 {
 }
 
 img {
-  size: 20px;
+  width: 600px;
   margin: 2em 0 2em 0;
 }
 
