@@ -49,7 +49,7 @@ h2 {
     text-align: center;
 }
 img {
-  size: 7em;
+  width: 600px;
   margin: 2em 0 2em 0;
 }
 

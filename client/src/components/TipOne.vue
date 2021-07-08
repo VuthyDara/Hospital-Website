@@ -45,10 +45,7 @@ export default {
 .tip {
   width: 100%;
 }
-img {
-  size: 20px;
-  margin: 2em 0 2em 0;
-}
+
 h2 {
   text-align: center;
 }
@@ -60,6 +57,9 @@ h2 {
   text-align: left;
 }
 
-
+img {
+  width: 600px;
+  margin: 2em 0 2em 0;
+}
 
 </style>
