@@ -4,9 +4,10 @@
       <h4>As we aim to give you the utmost level of service and attention, we would love to hear from you 
         and to receive your comments and suggestions to help us better serve you. 
         Please feel free to write your message in the box below.</h4>
+      
       <div class="row">
           <div>
-            <form action="#">
+            <form action="/thankyou">
               <div class="custom-input" id="feedback-input">
                 <img src="../assets/text.png" class="img">
                 <input
@@ -16,7 +17,7 @@
                   placeholder="Your Feedback or Suggestion.">
               </div>
             </form>
-          </div>
+          </div> 
         </div>
       <div class="row">
         <div>
@@ -29,10 +30,10 @@
                   @input="validateContent"
                   placeholder="Fullname">
             </div>
-          </form>
-        </div>
-         <div>
-            <form action="#">
+          </form> 
+        </div> 
+          <div> 
+            <form action="#"> 
               <div class="custom-input">
                 <img id="national" src="../assets/national.png">
                 <input
@@ -46,7 +47,7 @@
       </div>
       <div class="row">
         <div>
-            <form action="#">
+           <form action="#">  
               <div class="custom-input">
                 <img src="../assets/phonenumber.png">
                 <input
@@ -55,10 +56,10 @@
                   @input="validateContent"
                   placeholder="Phone number">
               </div>
-            </form>
-          </div>   
+             </form>  
+          </div>  
           <div>
-            <form action="#">
+             <form action="#">   
               <div class="custom-input">
                 <img src="../assets/email.png">
                 <input
@@ -67,13 +68,14 @@
                   @input="validateContent"
                   placeholder="Email">
               </div>
-            </form>
+           </form>  
           </div>
          </div>
          <div class="last">
           <h5>We would like to thank you on behalf of Our Hospital <br>and our team for giving us the opportunity to serve you.</h5>
           <button class="button" @click="submitFeedback" type="button" >Submit Request</button>
          </div>
+         
      </div>
   </div>
 </template>

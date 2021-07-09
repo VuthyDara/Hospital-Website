@@ -1,6 +1,7 @@
 <template>
   <div class="message">
-    <div class="box">
+    <h3>Make an Appointment</h3><hr>
+    <div class="box">  
       <h4>You can use this form to book appointment with our doctor.<br/>
 Before booking any appointment make sure you have checked the doctor's schedule.</h4>
       <div class="row">
@@ -103,6 +104,9 @@ export default {
   margin: 1.5em 0em 1.5em 30em;
   border: 1px solid #999797 ;
   border-radius: 2em;
+}
+h3 {
+    text-align: left;
 }
 h4 {
   font-size: 1em;

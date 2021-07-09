@@ -82,11 +82,7 @@ const routes = [
     name: 'contactpage',
     component: contact
   },
-  {
-    path: '/thankyou',
-    name: 'thankyoupage',
-    component: thankyou
-  },
+
   {
     path: '/generalcheckup',
     name: 'generalcheckup',
@@ -156,6 +152,11 @@ const routes = [
     path: '/tip4',
     name: 'tip4',
     component: tip4
+  },
+  {
+    path: '/thankyou',
+    name: 'thankyou',
+    component: thankyou
   },
 ]
 
