@@ -45,6 +45,7 @@ export default {
 .tip {
   width: 100%;
 }
+
 h2 {
   text-align: center;
 }

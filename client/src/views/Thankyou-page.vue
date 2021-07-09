@@ -12,7 +12,7 @@ import Footer from '../components/Footer.vue'
 import Thankyou from '../components/Thankyou.vue'
 
 export default {
-  name: 'Message-page',
+  name: 'thankyou',
   components: {
     Header,
     Thankyou,

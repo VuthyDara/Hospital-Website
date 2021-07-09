@@ -3,8 +3,8 @@
     <div>
       <p>Center & Clinic</p>
       <hr>
-      <router-link to="/doctor">Our Doctor</router-link>
-      <a href="#" class="func">Make an Appointment</a>
+      <router-link to="/doctor">Our Doctor</router-link><br>
+      <router-link to="/message">Make an Appointment</router-link><br>
       <router-link to="/patient-story">Patient's Story</router-link>
     </div>
     <div>

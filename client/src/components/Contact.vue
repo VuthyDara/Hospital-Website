@@ -18,7 +18,11 @@ Please use this form for inquiries about our services or for sharing your feedba
           <form action="#">
             <div class="custom-input" id="patient-name">
               <img src="../assets/patient.png">
-              <input type="text" name="patient_name" placeholder="Full Name">
+              <input 
+                v-model="form.name" 
+                id="message" rows="3" 
+                @input="validateContent"
+                placeholder="Full Name">
             </div>
           </form>
         </div>
@@ -28,7 +32,11 @@ Please use this form for inquiries about our services or for sharing your feedba
             <form action="#">
               <div class="custom-input">
                 <img src="../assets/phonenumber.png">
-                <input type="text" name="phone_number" placeholder="Phone Number">
+                <input 
+                  v-model="form.tel"
+                  id="tel" rows="2" 
+                  @input="validateContent"
+                  placeholder="Phone Number">
               </div>
             </form>
           </div>   
@@ -36,7 +44,11 @@ Please use this form for inquiries about our services or for sharing your feedba
             <form action="#">
               <div class="custom-input">
                 <img src="../assets/email.png">
-                <input type="text" name="email" placeholder="Email Address">
+                <input
+                  v-model="form.email"
+                  id="email" rows="2" 
+                  @input="validateContent" 
+                  placeholder="Email Address">
               </div>
             </form>
           </div>
@@ -46,7 +58,11 @@ Please use this form for inquiries about our services or for sharing your feedba
             <form action="#">
               <div class="custom-input" id="contact-input">
                 <img src="../assets/text.png" class="img">
-                <input type="text" name="text" placeholder="Message...">
+                <input 
+                  v-model="form.message" 
+                  id="name" rows="1" 
+                  @input="validateContent"
+                  placeholder="Message...">
               </div>
             </form>
           </div>
@@ -54,16 +70,60 @@ Please use this form for inquiries about our services or for sharing your feedba
         <div class="last">
          <h5>Thanks you for contacting with Our Hospital!<br>
 Our customer service will contact you back soon..</h5>
-        <button class="button" type="submit">Submit Request</button>
+        <button class="button" @click="submitContact" type="submit">Submit Request</button>
         </div>
      </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+import axios from 'axios'
 export default {
   name: 'Contact',
-  components: {
+  data() {
+    return {
+      form: {
+        message: '',
+        name: '',
+        tel: '',
+        email: '',
+      },
+      error: {}
+    }
+  },
+  props: {
+    msg: String
+  },
+  methods: {
+    validateContent() {
+      if (this.form.message && this.form.name && this.form.tel && this.form.email != "") {
+        this.error.message = null
+      }
+    },
+    submitContact() {
+      // Validation content
+      if (this.form.message && this.form.name && this.form.tel && this.form.email == "") {
+        this.error.message = "Everything should be filled"
+      }
+      // Post content to server
+      axios.post('http://localhost:4000/contacts', this.form)
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    }
+  },
+  computed: {
+    hasError() {
+      if(this.error.message) return true
+      return false
+    },
+    ...mapGetters([
+      "getContacts"
+    ]), // mapGetters() will return ["getPosts"] => "getPosts"
   }
 }
 </script>

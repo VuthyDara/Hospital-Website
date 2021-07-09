@@ -37,7 +37,8 @@ h2 {
     text-align: center;
 }
 img {
-    margin: 2em 0 2em 0;
+  width: 600px;
+  margin: 2em 0 2em 0;
 }
 
 .box {
