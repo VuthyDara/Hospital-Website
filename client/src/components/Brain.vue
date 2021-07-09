@@ -4,7 +4,7 @@
     <hr>
     <div class="content">
         <div class="left">
-            <img src="../assets/neurology01.jpg">
+            <img class="img1" src="../assets/neurology01.jpg">
         </div>
         <div>
             <p>Certain symptoms such as severe headache, nausea, vomiting, sudden weakness of legs or arms, abnormal facial expression, and slurred speech are important 
@@ -17,16 +17,51 @@
     </div>
     <h4>Neurology Team</h4>
     <hr>
+    <div class="container" v-for="post in getPosts" :key="post.name">
+      <ul>
+        <li v-if="post.department === 'Brain'">
+            <a href="#">
+              <img src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png" width="50" height="50">
+            </a>
+            <a href="#">
+              <h2 class="text-capitalize h5 mb-0">{{post.name}}</h2>
+            </a> 
+            <p class="small text-secondary m-0 mt-1">{{post.department}}</p>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-  name: 'Brain'
+  name: 'Brain',
+  computed: {
+        ...mapGetters([
+            "getPosts"
+        ]), // mapGetters() will return ["getPosts"] => "getPosts"
+    }
 }
 </script>
 
 <style scoped>
+.container {
+  width: 1024px;
+}
+
+.container ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.container ul li {
+  width: 300px;
+  height: 100px;
+  float: left;
+  margin: 15px;
+}
 .brain {
     width: 90%;
     margin: auto;
@@ -40,7 +75,7 @@ export default {
     width: 300%;
 }
 
-img {
+.img1 {
     width: 100%;
     left: 0px;
 }

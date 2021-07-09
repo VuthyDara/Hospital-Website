@@ -4,7 +4,7 @@
     <hr>
     <div class="content">
         <div class="left">
-            <img src="../assets/gi.jpg">
+            <img class="img1" src="../assets/gi.jpg">
         </div>
         <div>
             <p>This area of medicine pertains to problems of the digestive system and liver. Our GI Specialists perform a comprehensive range of diagnostic and treatment options 
@@ -18,16 +18,51 @@
     </div>
     <h4>GI Center Team</h4>
     <hr>
+    <div class="container" v-for="post in getPosts" :key="post.name">
+      <ul>
+        <li v-if="post.department === 'Stomach'">
+            <a href="#">
+              <img src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png" width="50" height="50">
+            </a>
+            <a href="#">
+              <h2 class="text-capitalize h5 mb-0">{{post.name}}</h2>
+            </a> 
+            <p class="small text-secondary m-0 mt-1">{{post.department}}</p>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-  name: 'Stomach'
+  name: 'Stomach',
+  computed: {
+        ...mapGetters([
+            "getPosts"
+        ]), // mapGetters() will return ["getPosts"] => "getPosts"
+    }
 }
 </script>
 
 <style scoped>
+.container {
+  width: 1024px;
+}
+
+.container ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.container ul li {
+  width: 300px;
+  height: 100px;
+  float: left;
+  margin: 15px;
+}
 .stomach {
     width: 90%;
     margin: auto;
@@ -41,7 +76,7 @@ export default {
     width: 300%;
 }
 
-img {
+.img1 {
     width: 100%;
     left: 0px;
 }

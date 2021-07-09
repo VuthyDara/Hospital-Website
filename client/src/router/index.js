@@ -128,8 +128,9 @@ const routes = [
     component: ICU
   },
   {
-    path: '/doctor-detail',
+    path: '/doctor-detail/:name',
     name: 'doctor-detail',
+    props: true,
     component: doctordetail
   },
   {

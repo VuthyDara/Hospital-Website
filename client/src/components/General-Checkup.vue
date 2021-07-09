@@ -4,7 +4,7 @@
     <hr>
     <div class="content">
         <div class="left">
-            <img src="../assets/generalcheckup.jpg">
+            <img class="img1" src="../assets/generalcheckup.jpg">
         </div>
         <div>
             <p>As a general rule, the best chance of treating a disease is catching it before symptoms arise. Many serious illnesses are not apparent at first and can go for months 
@@ -19,12 +19,31 @@
     </div>
     <h4>General Checkup Team</h4>
     <hr>
+    <div class="container" v-for="post in getPosts" :key="post.name">
+      <ul>
+        <li v-if="post.department === 'General Check-Up'">
+            <a href="#">
+              <img src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png" width="50" height="50">
+            </a>
+            <a href="#">
+              <h2 class="text-capitalize h5 mb-0">{{post.name}}</h2>
+            </a> 
+            <p class="small text-secondary m-0 mt-1">{{post.department}}</p>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-  name: 'General-Checkup'
+  name: 'General-Checkup',
+  computed: {
+        ...mapGetters([
+            "getPosts"
+        ]), // mapGetters() will return ["getPosts"] => "getPosts"
+    }
 }
 </script>
 
@@ -34,8 +53,6 @@ export default {
     margin: auto;
 }
 
-
-
 .content {
     display: flex;
 }
@@ -44,7 +61,7 @@ export default {
     width: 300%;
 }
 
-img {
+.img1 {
     width: 100%;
     left: 0px;
 }
@@ -59,5 +76,22 @@ hr {
 
 p {
     font-size: 12px;
+}
+
+.container {
+  width: 100%;
+}
+
+.container ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.container ul li {
+  width: 300px;
+  height: 100px;
+  float: left;
+  margin: 15px;
 }
 </style>

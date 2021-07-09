@@ -13,7 +13,7 @@ import Footer from '../components/Footer.vue'
 
 
 export default {
-  name: 'ContactPage',
+  name: 'DoctorDetail',
   components: {
     Header,
     Doctordetail,

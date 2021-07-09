@@ -25,7 +25,6 @@
               <h2 class="text-capitalize h5 mb-0">{{post.name}}</h2>
             </a> 
             <p class="small text-secondary m-0 mt-1">{{post.department}}</p>
-          
         </router-link></li>
       </ul>
     </div>

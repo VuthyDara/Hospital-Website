@@ -9,6 +9,14 @@ const postSchema = new Schema({
   department: {
     type: String,
     required: true
+  },
+  nationality: {
+    type: String,
+    required: false
+  },
+  specialty: {
+    type: String,
+    required: false
   }
 }, {collection: 'posts'});
 
