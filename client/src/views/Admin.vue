@@ -30,13 +30,23 @@
                         @input="validateContent"
                         placeholder="Enter doctor's name...">
                       </textarea>
-                      <textarea 
+                      <form-input 
                         v-model="form.department" 
                         class="form-control" 
                         id="message" rows="1" 
-                        @input="validateContent"
-                        placeholder="Enter doctor's department...">
-                      </textarea>
+                        @input="validateContent">
+                        <select name="department">
+                          <option value="default" selected="selected">Choose a department</option>
+                          <option value="department">Brain</option>
+                          <option value="department">General Check-Up</option>
+                          <option value="department">Stomach</option>
+                          <option value="department">Emergency</option>
+                          <option value="department">ICU</option>
+                          <option value="department">Heart</option>
+                          <option value="department">Children</option>
+                          <option value="department">Woman</option>
+                        </select>
+                      </form-input>
                       <span v-if="hasError" class="form-error-message">{{error.message}}</span>
                     </div>
                   </div>
@@ -58,7 +68,6 @@
                   <p class="small text-secondary m-0 mt-1">{{post.department}}</p>
                 </li>
               </ul>
-              
             </div>           
           </div>
         </div>
@@ -121,6 +130,10 @@ export default {
     border: 1px solid;
     margin: auto;
     display: flex;
+}
+
+form-input, textarea {
+  width: 200px;
 }
 
 .left {

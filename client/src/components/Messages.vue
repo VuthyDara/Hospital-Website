@@ -47,9 +47,14 @@ Before booking any appointment make sure you have checked the doctor's schedule.
                 <img src="../assets/department.png">
                 <select name="department">
                   <option value="default" selected="selected">Choose a department</option>
-                  <option value="department" v-for="post in getPosts" :key="post.id">
-                    <h2 class="text-capitalize h5 mb-0">{{post.department}}</h2>
-                  </option>
+                  <option value="department">Brain</option>
+                  <option value="department">General Check-Up</option>
+                  <option value="department">Stomach</option>
+                  <option value="department">Emergency</option>
+                  <option value="department">ICU</option>
+                  <option value="department">Heart</option>
+                  <option value="department">Children</option>
+                  <option value="department">Woman</option>
                 </select>
               </div>
             </form>
